@@ -2200,7 +2200,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 27rem;
 			border-radius: 0;
 		}
 
@@ -2652,6 +2652,15 @@ input, select, textarea {
 
 /* Features */
 
+	.certificates {
+		display: flex;
+		flex-direction: column;
+	}
+		.certificates img {
+			max-width: 100%;
+			height: auto;
+		}
+
 	.features article {
 		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
@@ -2737,6 +2746,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 3em;
+			height: 27rem;
 		}
 
 			#header > header .avatar {
@@ -2763,7 +2773,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			bottom: 0;
 			left: 0;
-			padding: 2em;
+			padding: 1em;
 			width: 100%;
 		}
 
@@ -2961,7 +2971,7 @@ input, select, textarea {
 				}
 
 			.image.main {
-				height: 20em;
+				height: 25em;
 			}
 
 		/* Header */

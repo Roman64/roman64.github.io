@@ -373,9 +373,6 @@
 		}
 	}
 
-	footer {
-	}
-
 /* Form */
 
 	form {
@@ -1146,6 +1143,16 @@
 		}
 	}
 
+	.certificates {
+		display: flex;
+		flex-direction: column;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
 /* Header */
 
 	#header {
@@ -1193,6 +1200,7 @@
 		> header {
 			@include vendor('flex-shrink', '0');
 			padding: 3em;
+			height: 27rem;
 
 			.avatar {
 				display: block;
@@ -1216,7 +1224,7 @@
 			@include vendor('flex-shrink', '0');
 			bottom: 0;
 			left: 0;
-			padding: 2em;
+			padding: 1em;
 			width: 100%;
 
 			.icons {
@@ -1439,7 +1447,7 @@
 				}
 
 				&.main {
-					height: 20em;
+					height: 25em;
 				}
 			}
 
