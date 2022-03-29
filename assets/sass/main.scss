@@ -18,8 +18,8 @@
 	@include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
 		large:    ( 1025px,  1280px ),
-		medium:   ( 737px,   1024px ),
-		small:    ( 481px,   736px  ),
+		medium:   ( 584px,   1024px ),
+		small:    ( 481px,   583px  ),
 		xsmall:   ( null,    480px  ),
 	));
 
@@ -735,7 +735,7 @@
 
 		&.main {
 			display: block;
-			height: 20em;
+			height: 27rem;
 			border-radius: 0;
 
 			img {
@@ -886,6 +886,8 @@
 	ul.feature-icons {
 		list-style: none;
 		padding-left: 0;
+		columns: 2;
+		column-gap: 5em;
 
 		li {
 			@include icon;
@@ -894,7 +896,6 @@
 			padding: 0.35em 0 0 3.5em;
 			position: relative;
 			vertical-align: top;
-			width: 48%;
 
 			&:before {
 				background: _palette(accent1, bg);
@@ -1128,6 +1129,7 @@
 				img {
 					display: block;
 					width: 100%;
+					filter: drop-shadow(5px 5px 10px rgba(128, 128, 128, 0.728));
 				}
 			}
 
@@ -1146,10 +1148,17 @@
 	.certificates {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
 
 		img {
 			max-width: 100%;
 			height: auto;
+
+			&:last-child {
+				margin: 20px 0 20px 0;
+			}
 		}
 	}
 
@@ -1759,6 +1768,10 @@
 							@include vendor('transform', 'translateX(#{$size-header})');
 						}
 					}
+				}
+
+				ul.feature-icons {
+					columns: 1;
 				}
 			}
 
